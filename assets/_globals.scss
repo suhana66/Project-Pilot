@@ -1,0 +1,45 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-link: #0000ee;
+$color-link-active: #ff0000;
+$color-dark: #1b3344;
+$color-light: #708090;
+$color-bg: #f0f8ff;
+$color-pink: #fdc6ea;
+$color-orange: #fdd9c6;
+$color-yellow: #fdf5c6;
+$color-green: #eafdc6;
+$color-blue: #c6eafd;
+$color-purple: #d9c6fd;
+$font-default: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-display: 'Inconsolata', $font-default;
+$border: 1px $color-black solid;
+
+@mixin extra-sm {
+    @media screen and (max-width: 319px) {
+        @content;
+    }
+}
+
+@mixin default-link {
+    a {
+        color: $color-link;
+    }
+
+    a:active {
+        color: $color-link-active;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.highlight {
+    font-family: $font-display;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

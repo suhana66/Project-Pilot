@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Hanken+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+    <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+<body>
+    <nav>
+        <a href="/" class="brand">{{ site.title }}</a>
+        <ol>
+            <li>
+                <a href="/catalog">Catalog</a>
+            </li>
+        </ol>
+    </nav>
+    {%- unless page.error == true -%}
+        {%- include header.html -%}
+    {%- endunless -%}
+    <main>{{ content }}</main>
+    <footer>
+        <small class="copyright">© 2023 {{ site.title }}</small>
+    </footer>
+</body>
+
+</html>

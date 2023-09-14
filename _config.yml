@@ -1,0 +1,21 @@
+title: Project Pilot
+email: project-pilot-coding@gmail.com
+github_username: project-pilot-coding
+
+permalink: /:slug
+
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      layout: default
+      title: Learn to Code through Projects
+  -
+    scope:
+      type: posts
+    values:
+      permalink: /:slugified_categories/:slug
+
+plugins:
+  - jekyll-redirect-from
