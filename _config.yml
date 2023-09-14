@@ -13,11 +13,6 @@ defaults:
     values:
       layout: default
       title: Learn to Code through Projects
-  -
-    scope:
-      type: posts
-    values:
-      permalink: /:slugified_categories/:slug
 
 plugins:
   - jekyll-redirect-from
