@@ -1,11 +1,11 @@
 ---
-title: Practice Programming Fundamentals with a Terminal-based Calculator
+title: Terminal-based Calculator
 category: Project Guidelines
 level: 1
 ---
 
 ## Overview
-In this project, you will create a terminal-based calculator that performs arithmetic operations such as addition, subtraction, multiplication, and division. The calculator will accept input from the user, perform the specified operation, and display the result.
+In this project, you will create a terminal-based calculator that performs arithmetic operations such as addition, subtraction, multiplication, and division from scratch. The calculator will accept input from the user, perform the specified operation, and display the result.
 
 ## Objective
 The objective of this project is to help you learn and practice programming fundamentals such as input/output, data types and structures, functions, and control flow.

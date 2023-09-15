@@ -1,5 +1,5 @@
 ---
-title: Start learning Game Development with a Space Invaders game
+title: Space Invaders Game
 category: Project Guidelines
 level: 1
 ---
