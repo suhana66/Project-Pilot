@@ -1,7 +1,7 @@
 ---
 title: Learn Algorithm Creation with a Sudoku Solver GUI
 category: Project Guidelines
-level: 1
+level: 2
 ---
 
 ## Overview
