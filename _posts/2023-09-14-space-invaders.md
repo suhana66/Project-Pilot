@@ -1,5 +1,5 @@
 ---
-title: Space Invaders Game
+title: Learn Object-Oriented Programming with a Space Invaders Game
 category: Project Guidelines
 level: 1
 ---

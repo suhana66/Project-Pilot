@@ -1,5 +1,5 @@
 ---
-title: Terminal-based Calculator
+title: Learn Programming Fundamentals with a Terminal-based Calculator
 category: Project Guidelines
 level: 1
 ---

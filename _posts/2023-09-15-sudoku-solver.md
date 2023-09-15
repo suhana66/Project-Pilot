@@ -1,5 +1,5 @@
 ---
-title: Sudoku Solver GUI
+title: Learn Algorithm Creation with a Sudoku Solver GUI
 category: Project Guidelines
 level: 1
 ---
