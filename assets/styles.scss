@@ -3,6 +3,12 @@
 
 @import "../_sass/_globals";
 
+@mixin internal-link {
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,10 +59,6 @@ nav {
     color: $color-light;
     padding: 0 .25rem;
 
-    a:hover {
-        text-decoration: underline;
-    }
-
     li {
         display: inline-block;
         padding: .375rem 0;
@@ -66,9 +68,7 @@ nav {
             margin: 0 .5rem;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
+        @include internal-link;
     }
 
     .brand {
@@ -241,6 +241,8 @@ figure {
     background-color: $color-white;
     padding: .75rem;
     padding-bottom: 0;
+
+    @include internal-link;
 
     img {
         display: block;
