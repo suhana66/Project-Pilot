@@ -30,6 +30,15 @@ a {
     color: inherit;
     text-decoration: none;
     font-size: inherit;
+
+    &.external {
+        color: $color-link;
+        text-decoration: underline;
+    
+        &:active {
+            color: $color-link-active;
+        }
+    }
 }
 
 nav {
@@ -43,6 +52,10 @@ nav {
     background-color: $color-dark;
     color: $color-light;
     padding: 0 .25rem;
+
+    a:hover {
+        text-decoration: underline;
+    }
 
     li {
         display: inline-block;
@@ -59,7 +72,7 @@ nav {
     }
 
     .brand {
-        @extend .highlight;
+        font-family: $font-display;
         padding: .5rem .25rem;
         margin-left: .25rem;
     }
@@ -94,7 +107,7 @@ header {
     }
 
     .tagline {
-        @extend .highlight;
+        font-family: $font-display;
         margin-left: .25rem;
         display: inline-block;
     }
@@ -104,6 +117,27 @@ h2 {
     font-weight: 700;
     line-height: 1.3;
     font-size: 1.25rem;
+}
+
+p + p > strong {
+    display: block;
+    margin-top: 1rem;
+}
+
+pre, :not(pre) > code {
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: .875rem;
+    font-family: ui-monospace, 'SFMono-Regular', 'SF Mono, Menlo', 'Consolas', 'Liberation Mono', monospace;
+    padding: 1rem;
+    margin: 1rem 0;
+    white-space: pre-wrap;
+    line-height: 1.45;
+}
+
+:not(pre) > code {
+    padding: .125rem .25rem;
 }
 
 main {
@@ -174,23 +208,11 @@ main {
         }
     
         .type {
-            @extend .highlight;
-            @extend .uppercase;
+            font-family: $font-display;
+            text-transform: uppercase;
             border-bottom: $border;
             font-weight: 500;
             padding: .25rem 0 .25rem .75rem;
-    
-            &.project-guidelines {
-                background-color: $color-green;
-            }
-    
-            &.quick-start {
-                background-color: $color-purple;
-            }
-    
-            &.concept {
-                background-color: $color-orange;
-            }
         }
     
         .level {
@@ -228,7 +250,7 @@ figure {
     }
 
     figcaption {
-        @extend .highlight;
+        font-family: $font-display;
         font-size: inherit;
         font-weight: inherit;
         text-align: center;
@@ -246,8 +268,6 @@ figure {
         p {
             margin-bottom: 1rem;
         }
-
-        @include default-link;
     }
 }
 
@@ -291,10 +311,21 @@ figure {
     font-size: .75rem;
     font-weight: 700;
     line-height: 1;
-    background-color: $color-purple;
     color: inherit;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 50rem;
+}
+
+.project-guidelines {
+    background-color: $color-green;
+}
+
+.project-tutorial {
+    background-color: $color-purple;
+}
+
+.concept-capsule {
+    background-color: $color-orange;
 }

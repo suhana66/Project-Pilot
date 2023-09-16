@@ -10,6 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Hanken+Grotesk:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+    {%- if page.id -%}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/syntax.css">
+    {%- endif -%}
     <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body>

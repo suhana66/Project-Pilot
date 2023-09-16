@@ -20,26 +20,3 @@ $border: 1px $color-black solid;
         @content;
     }
 }
-
-@mixin default-link {
-    a {
-        color: $color-link;
-    }
-
-    a:active {
-        color: $color-link-active;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-}
-
-.highlight {
-    font-family: $font-display;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}

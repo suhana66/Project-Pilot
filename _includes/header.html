@@ -10,7 +10,7 @@
             {%- if page.level -%}
             {%- include level.html num=page.level -%}
             {%- endif -%}
-            <div class="badge">{{ page.category }}</div>
+            <div class="badge {{ page.category | slugify }}">{{ page.category }}</div>
         </section>
     {%- endif -%}
 </header>

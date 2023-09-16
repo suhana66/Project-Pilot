@@ -19,5 +19,10 @@ defaults:
     values:
       permalink: /:slugified_categories/:slug
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
 plugins:
   - jekyll-redirect-from
