@@ -1,7 +1,7 @@
 ---
 title: Learn Programming Fundamentals with a Terminal-based Calculator
 category: Project Guidelines
-level: 2
+level: 1
 ---
 
 ## Overview
