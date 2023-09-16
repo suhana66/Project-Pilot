@@ -17,7 +17,7 @@ defaults:
     scope:
       type: posts
     values:
-      permalink: /:slugified_categories/:slug
+      permalink: /:slug
 
 markdown: kramdown
 highlighter: rouge
